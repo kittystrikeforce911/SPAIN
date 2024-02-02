@@ -1,0 +1,9 @@
+##!/bin/bash
+##Code by kittystrikeforce911
+##Script:Set custom xfce4 panel icons  
+
+##We remove current .desktop files 
+###If you want to change the icons change the number at "launcher-" to the correct one 
+rm /home/usuario/.config/xfce4/panel/launcher-3/; rm /home/usuario/.config/xfce4/panel/launcher-4/;
+echo "clean1"
+
