@@ -1,0 +1,45 @@
+#!bin/bash
+##Code by kittystrikeforce911
+##Description:Menu to acces all my games at once :3
+
+clear;
+echo -e "\e[33m
+                                                   ▄█             
+▀████▀ ▀███▀▀████▀██▀▀██▀▀█████▀▀██▀▀██████▀   ▀██▀██ ▄█▀▀▀█▄█    
+  ██   ▄█▀    ██ █▀   ██   ▀█▀   ██   ▀█ ███   ▄█  ▀▀▄██    ▀█    
+  ██ ▄█▀      ██      ██         ██       ███ ▄█     ▀███▄        
+  █████▄      ██      ██         ██        ████        ▀█████▄    
+  ██  ███     ██      ██         ██         ██       ▄     ▀██    
+  ██   ▀██▄   ██      ██         ██         ██       ██     ██    
+▄████▄   ███▄████▄  ▄████▄     ▄████▄     ▄████▄     █▀█████▀
+ \e[0m";
+ echo -e "\e[33m
+  ▄▄█▀▀▀█▄█      ██     ▀████▄     ▄███▀███▀▀▀███ ▄█▀▀▀█▄█
+▄██▀     ▀█     ▄██▄      ████    ████   ██    ▀█▄██    ▀█
+██▀       ▀    ▄█▀██▄     █ ██   ▄█ ██   ██   █  ▀███▄    
+██            ▄█  ▀██     █  ██  █▀ ██   ██████    ▀█████▄
+██▄    ▀████  ████████    █  ██▄█▀  ██   ██   █  ▄     ▀██
+▀██▄     ██  █▀      ██   █  ▀██▀   ██   ██     ▄██     ██
+  ▀▀███████▄███▄   ▄████▄███▄ ▀▀  ▄████▄██████████▀█████▀ 
+\e[0m";
+echo "";
+echo "'--A gifted human player could always triumph 
+over the game’s AI, because software couldn’t improvise.'
++Ready Player One";
+echo "";
+echo "-What you feel like playing today?";
+echo "";
+echo "";
+echo "(1)Fredbears Fright";
+echo "(2)FNAF World";
+echo "(3)Vampire survivors";
+echo "(4)Undertale";
+echo -e "\e[5:36mWaiting... \e[0m" ;
+read dvd;
+case $dvd in 
+  1) exec wine /home/usuario/Documentos/SBJCTS/LG/XTRS/.fredbearsfright.exe;; 
+  2) exec wine /home/usuario/Documentos/SBJCTS/LC/XTRS/.fnafworld.exe;; 
+  3) exec wine /home/usuario/Documentos/SBJCTS/HG/XTRS/.Undertale/UNDERTALE.exe;;
+  4) exec wine /home/usuario/Documentos/SBJCTS/VL/XTRS/.Vampire.Survivors.Build.13012413/Vampire Survivors.exe;;
+  *) echo "Invalid Input";;
+esac; 
