@@ -1,0 +1,39 @@
+##!/bin/bash
+##Code by kittystrikeforce911
+##Description:Cleans/Removes history logs 
+##Notice:This only for sthetical purposes
+
+##locate recently-used .xbel file and delete it
+cd /home/usuario/.local/share/;
+rm -v *.xbel;
+echo "$PWD";
+
+##remove firefox cache (thumbnails?)
+cd /home/usuario/.cache/mozilla/firefox/2fm89dy4.wizard/cache2/entries/;
+rm -v -r /home/usuario/.cache/mozilla/firefox/2fm89dy4.wizard/cache2/entries/;
+echo "$PWD";
+
+##clean xfce4 plugins(clipman,notifs.,appfinder)And reset desktop icons
+cd /home/usuario/.cache/xfce4/;
+rm -v -r /home/usuario/.cache/xfce4/;
+echo "$PWD";
+cd /home/usuario/.config/xfce4/desktop/;
+rm -v -r /home/usuario/.config/xfce4/desktop/;
+echo "$PWD";
+
+##remove cache thumbnails
+cd /home/usuario/.cache/thumbnails/;
+rm -v -r /home/usuario/.cache/thumbnails/;
+echo "$PWD";
+
+##delete bash_history before cleaning and closing bash
+cd /home/usuario/;
+rm -v .bash_history;
+echo "$PWD";
+echo "LOG OUT CONFIRMATION(1=YES/0=NO)";
+read confirmation
+case "$confirmation" in 
+1)clear ;;
+0)echo "OK";; 
+*) echo "INVALID INPUT";;
+esac
