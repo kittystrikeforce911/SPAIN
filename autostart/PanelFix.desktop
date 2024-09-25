@@ -1,9 +1,0 @@
-##Code by kittystrikeforce911
-##Description: .desktop file that exec. the icons panel fix 
-
-[Desktop Entry]
-Name=Iniciar Servicio de panel personalizado
-Comment=Iniciar Servicio de panel personalizado
-Exec="/home/usuario/.config/autostart/Modules/Patches/PanelFix/PanelFix.sh"
-Type=Application
-

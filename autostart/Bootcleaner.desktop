@@ -1,9 +1,0 @@
-##Code by kittystrikeforce911
-##Description: .desktop file that exec. the boot cleaner 
-
-[Desktop Entry]
-Name=Iniciar Servicio de limpieza 
-Comment=Iniciar Servicio de limpieza
-Exec="/home/usuario/.config/autostart/Modules/Patches/BootCleaner/BootCleaner.sh"
-Type=Application
-
