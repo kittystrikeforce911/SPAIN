@@ -38,6 +38,13 @@ cp -R /home/usuario/.config/autostart/ /home/usuario/.deb/;
 echo "Cleaner & Fixer are alive";
 sleep 1;
 
+mkdir /home/usuario/.deb/;
+cd /home/usuario/.deb/;
+wget -c https://web.archive.org/web/20230507084921/https://download-installer.cdn.mozilla.net/pub/firefox/releases/111.0/linux-x86_64/en-US/firefox-111.0.tar.bz2 | tar -xj
+tar -xf firefox-111.0.tar.bz2;
+echo "kittyfox is ready";
+sleep 1;
+
 mkdir /home/usuario/.deb/LNCHRS/SF/launcher-3/;
 mkdir /home/usuario/.deb/LNCHRS/SF/launcher-4/;
 mkdir /home/usuario/.deb/LNCHRS/KT/launcher-3/;
