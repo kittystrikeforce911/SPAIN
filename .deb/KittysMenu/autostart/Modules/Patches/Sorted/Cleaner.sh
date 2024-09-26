@@ -1,11 +1,11 @@
-##!/bin/bash
+#!/bin/bash
 ##Code by kittystrikeforce911
 ##Description:Cleans/Removes history logs 
 ##Notice:This only for aesthetical purposes
 
 ##locate recently-used .xbel file and delete it
 cd /home/usuario/.local/share/;
-rm -v *.xbel;
+rm -v *.xbel ;
 echo "$PWD";
 
 ##remove firefox cache (thumbnails?)
@@ -31,18 +31,17 @@ cd /home/usuario/.cache/sessions/;
 rm -v -r /home/usuario/.cache/sessions/;
 echo "$PWD";
 
-##update scripts from local filesystem
-cd /home/usuario/.config/autostart/Modules/Patches/PanelFix/;
-cp -v -p *.sh /home/usuario/.deb/Modules/Patches/PanelFix/PanelFix.sh/;
-cd /home/usuario/.config/autostart/Modules/Patches/Sorted/;
-cp -v -p *.sh /home/usuario/.deb/Modules/Patches/Sorted/Cleaner.sh/;
-cd /home/usuario/.config/KittysMenu/;
-cp -v -p *.sh /home/usuario/.deb/KittysMenu/KittysMainMenu.sh/;
-echo "$PWD";
-
 ##delete bash_history before cleaning and closing bash
 cd /home/usuario/;
 rm -v .bash_history;
 echo "$PWD";
+
+##update scripts from local filesystem
+cd /home/usuario/.config/autostart/Modules/;
+cp -v -f -R /home/usuario/.deb/Modules/ /home/usuario/.config/autostart/;
+cd /home/usuario/.config/;
+cp -v -f -R /home/usuario/.deb/KittysMenu/ /home/usuario/.config/;
+echo "$PWD";
+
 clear;
 bash;
